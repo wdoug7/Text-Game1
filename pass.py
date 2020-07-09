@@ -22,7 +22,7 @@ Forbidden_Traveler = character_class(20,20,60)
 #Difficulty Modifiers
 easy = 0.8
 normal = 1
-hard = 1.2
+hard = 1.3
 
 
 while True:
