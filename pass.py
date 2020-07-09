@@ -1,4 +1,5 @@
-
+#imports
+import random
 
 
 
@@ -24,7 +25,7 @@ easy = 0.8
 normal = 1
 hard = 1.2
 
-
+#difficulty selection
 while True:
         #choose from easy, normal, hard
         diff = input("Choose Your Difficult: ")
@@ -41,20 +42,39 @@ while True:
             print("Not a valid input, please try again")
 
 
+#Starting Vars
+gold = 50
+
 print (intro)
 
-
+#Class Selection
 while True:
         diff = input("Choose Your Class: ")
         if diff == "Bounded Knight":
-            current_class = easy
+            current_class = Bounded_Knight
             break
         elif diff == "Assassin":
-            current_class = normal
+            current_class = Assassin
             break
         elif diff == "Forbidden_Traveler":
-            current_class = hard
+            current_class = Forbidden_Traveler
             break
         else:
             print("Not a valid input, please try again")
+
+
+print("A man approaches you with a rock in his right hand. He seems hungry.")
+
+#choose ""attack" or "offer gold"
+choice_1 = input("Do you attack him, or offer him a few gold?") 
+
+if choice_1 == "attack":
+    if current_class == Bounded_Knight:
+        print("You unsheathe your large sword and swing horizontally in a large swooping motion. The length of the blade cuts the man in two before he even had a chance to enter arms length of you") 
+    elif current_class == Assassin:
+        print("You sprint up to the man, pull out the knife hidden in your sleeve, and cut his jugular before he even has a chance to react")
+    elif current_class == Forbidden_Traveler:
+
+
+
 
