@@ -22,7 +22,7 @@ Forbidden_Traveler = character_class(20,20,60)
 #Difficulty Modifiers
 easy = 0.8
 normal = 1
-hard = 1.3
+hard = 1.2
 
 
 while True:
@@ -46,7 +46,7 @@ print (intro)
 
 while True:
         diff = input("Choose Your Class: ")
-        if diff == "Bounded_Knight":
+        if diff == "Bounded Knight":
             current_class = easy
             break
         elif diff == "Assassin":
